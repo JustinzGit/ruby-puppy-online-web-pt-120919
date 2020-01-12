@@ -13,7 +13,8 @@ class Dog
   end 
   
   def self.print_all
-    @@all.each {|dog_name| puts dog_name}
+    @@all.each do |dog_name|
+      dog_name.strip()
   end 
   
   def save
